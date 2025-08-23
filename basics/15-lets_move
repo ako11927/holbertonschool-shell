@@ -1,2 +1,2 @@
 #!/bin/bash
-mv [A-Z]* /tmp/
+mv [A-Z]* /tmp/ 2>/dev/null
