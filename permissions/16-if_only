@@ -1,6 +1,2 @@
 #!/bin/bash
-owner=$({ stat -c %U hello 2>/dev/null || stat -f %Su hello 2>/dev/null; })
-if [ "$owner" = "guillaume" ]; then
-    chown vincent hello
-fi
-
+find . -maxdepth 1 -user guillaume -name hello -exec chown vincent {} \;
