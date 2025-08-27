@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -user guillaume -name hello -exec chown vincent {} \;
+find . -maxdepth 1 -user guillaume -name hello -print0 2>/dev/null | xargs -0 -r chown vincent
