@@ -1,5 +1,5 @@
 #!/bin/bash
-# Change owner of 'hello' to 'vincent' only if its current owner is 'guillaume'
+# يغيّر ملكية ملف hello إلى vincent فقط إذا كان المالك الحالي هو guillaume
 if [ "$(ls -l hello 2>/dev/null | awk '{print $3}')" = "guillaume" ]; then
     chown vincent hello
 fi
