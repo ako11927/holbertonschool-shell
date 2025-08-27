@@ -1,4 +1,5 @@
 #!/bin/bash
-if [ "$(whoami)" = "guillaume" ]; then
+if [ "$current_owner" = "guillaume" ];
+ then
     chown vincent hello
 fi
