@@ -1,3 +1,2 @@
 #!/bin/bash
-# Create the exact file: \*\\'"Best School"\'\\*$\?\*\*\*\*\*:)
 printf "Best School\n" > "\*\\'\"Best School\"'\\*\$\?\*\*\*\*\*:)"
