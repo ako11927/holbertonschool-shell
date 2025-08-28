@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "Best School" > "\*\\'\"Best School\"'\\*\$\?\*\*\*\*\*:)"
+# create the exact filename and write exactly "Best School\n" (no extra output)
+printf %s\\n "Best School" > "*\\'\"Best School\"'\\*\$?\*\*\*\*\*:)"
