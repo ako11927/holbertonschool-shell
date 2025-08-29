@@ -1,3 +1,2 @@
 #!/bin/bash
-name=$'\\*\\\\\'"Best School"\\\'\\\\*\\$\\?\\*\\*\\*\\*\\*:)'
-printf 'Best School\n' > "$name"
+printf 'Best School\n' > "$(cat filename)"
